@@ -1,0 +1,14 @@
+drop table rooms;
+
+CREATE TABLE rooms (
+	aid INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR NOT NULL,
+	email VARCHAR NOT NULL,
+	title VARCHAR NOT NULL,
+	password VARCHAR NOT NULL,
+	content VARCHAR NOT NULL,
+	date TIMESTAMP
+);
+
+테이블 초기화 TRUNCATE TABLE rooms;
+카운팅 초기화 ALTER TABLE rooms ALTER COLUMN aid RESTART WITH 1;
